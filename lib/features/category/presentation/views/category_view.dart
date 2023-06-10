@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 import 'package:store_app/features/category/presentation/views/widgets/category_view_body.dart';
-import 'package:store_app/core/widgets/home_icons.dart';
+import 'package:store_app/core/widgets/app_bar_icons.dart';
 
 import '../../../../core/widgets/app_drawer.dart';
 import '../manager/get_category_cubit/get_category_cubit.dart';
@@ -37,7 +37,7 @@ class CategoriesScreen extends StatelessWidget {
             style: const TextStyle(color: Colors.black),
           ),
           actions: const [
-            HomeIcons(),
+            AppBarIcons(),
           ],
         ),
         drawer: const AppDrawer(),
