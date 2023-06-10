@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
-import '../cubits/get_category/get_category_cubit.dart';
-import '../models/product_model.dart';
-import 'product_item.dart';
+import '../../../../home/data/models/product_model.dart';
+import '../../../../home/presentation/views/widgets/product_item.dart';
+import '../../manager/get_category_cubit/get_category_cubit.dart';
 
 class CategoryScreenBody extends StatefulWidget {
   const CategoryScreenBody({super.key, required this.categoryTitle});

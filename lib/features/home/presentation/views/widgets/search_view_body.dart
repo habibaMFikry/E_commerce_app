@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 import 'package:store_app/features/home/presentation/views/widgets/product_item.dart';
 
-import '../cubits/get_all_products_cubit/get_all_products_cubit.dart';
-import '../models/product_model.dart';
+import '../../manager/get_all_products_cubit/get_all_products_cubit.dart';
+import '../../../data/models/product_model.dart';
 
 class SearchScreenBody extends StatefulWidget {
   const SearchScreenBody({super.key});

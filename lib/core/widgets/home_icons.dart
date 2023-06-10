@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/widgets/badge.dart';
+import 'package:store_app/core/widgets/badge.dart' as badge;
 
-import '../cubits/cart/cart_cubit.dart';
-import '../screens/cart_screen.dart';
-import '../screens/search_screen.dart';
+import '../../features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
+import '../../features/cart/presentation/views/cart_screen.dart';
+import '../../features/home/presentation/views/search_view.dart';
 
 class HomeIcons extends StatelessWidget {
   const HomeIcons({super.key});
@@ -28,7 +28,7 @@ class HomeIcons extends StatelessWidget {
         ),
         BlocBuilder<CartCubit, CartState>(
           builder: (context, state) {
-            return Badge(
+            return badge.Badge(
               value: cart.itemCount.toString(),
               child: IconButton(
                 icon: const Icon(Icons.shopping_cart),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:sizer/sizer.dart';
-import 'package:store_app/screens/category_screen.dart';
+import 'package:store_app/features/category/presentation/views/category_view.dart';
 
 class SlideShow extends StatelessWidget {
   const SlideShow({super.key});

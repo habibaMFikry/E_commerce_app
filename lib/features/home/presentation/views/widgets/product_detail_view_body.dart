@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/models/product_model.dart';
-import 'package:store_app/screens/cart_screen.dart';
 
-import '../cubits/cart/cart_cubit.dart';
+import 'package:store_app/features/home/data/models/product_model.dart';
+import '../../../../cart/presentation/manager/cart_cubit/cart_cubit.dart';
 
 class ProductDetailScreenBody extends StatelessWidget {
   final ProductModel productModel;

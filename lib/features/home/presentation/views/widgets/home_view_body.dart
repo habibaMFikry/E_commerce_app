@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/cubits/cart/cart_cubit.dart';
 
-import 'package:store_app/widgets/product_item.dart';
-import 'package:store_app/widgets/slide_show.dart';
-import '../cubits/get_all_products/get_all_products_cubit.dart';
-import '../models/product_model.dart';
+import 'package:store_app/features/home/presentation/views/widgets/product_item.dart';
+import 'package:store_app/features/home/presentation/views/widgets/slide_show.dart';
+
+import '../../../data/models/product_model.dart';
+import '../../manager/get_all_products_cubit/get_all_products_cubit.dart';
 
 class HomeScreenBody extends StatefulWidget {
   const HomeScreenBody({super.key});

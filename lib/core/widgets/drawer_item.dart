@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/screens/category_screen.dart';
+import 'package:store_app/features/category/presentation/views/category_view.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem({super.key, required this.categoryTitle});

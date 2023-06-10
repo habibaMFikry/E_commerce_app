@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
-import 'package:store_app/cubits/cart/cart_cubit.dart';
-import 'package:store_app/models/cart_model.dart';
-import 'package:store_app/widgets/delete_dialog.dart';
+
+import 'package:store_app/features/cart/data/models/cart_model.dart';
+import 'package:store_app/features/cart/presentation/views/widgets/delete_dialog.dart';
+
+import '../../manager/cart_cubit/cart_cubit.dart';
 
 class CartItem extends StatelessWidget {
   final CartModel cartModel;
@@ -18,7 +20,7 @@ class CartItem extends StatelessWidget {
         return Dismissible(
           key: ValueKey(cartModel.id),
           background: Container(
-            color: Theme.of(context).errorColor,
+            color: Theme.of(context).colorScheme.error,
             alignment: Alignment.centerRight,
             padding: EdgeInsets.only(right: 2.h),
             margin: EdgeInsets.all(1.h),

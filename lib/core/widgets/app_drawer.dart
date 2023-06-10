@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/cubits/all_categories/all_categories_cubit.dart';
-import 'package:store_app/screens/home_screen.dart';
-import 'package:store_app/widgets/drawer_item.dart';
+import 'package:store_app/features/home/presentation/views/home_view.dart';
+import 'package:store_app/core/widgets/drawer_item.dart';
+
+import '../../features/category/presentation/manager/all_categories_cubit/all_categories_cubit.dart';
 
 class AppDrawer extends StatefulWidget {
   const AppDrawer({super.key});
