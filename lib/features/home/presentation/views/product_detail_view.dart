@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:store_app/models/cart_model.dart';
-import 'package:store_app/models/product_model.dart';
-import 'package:store_app/widgets/product_detail_screen_bbody.dart';
+import 'package:store_app/features/home/data/models/product_model.dart';
+import 'package:store_app/features/home/presentation/views/widgets/product_detail_view_body.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   final ProductModel productModel;
@@ -17,7 +16,6 @@ class ProductDetailScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text(
-          // productModel.title,
           productModel.title.substring(0, 10),
           style: const TextStyle(color: Colors.black),
         ),

@@ -1,8 +1,8 @@
-import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../models/product_model.dart';
-import '../../services/all_products_service.dart';
+import '../../../data/models/product_model.dart';
+import '../../../data/services/all_products_service.dart';
 
 part 'get_all_products_state.dart';
 
@@ -23,14 +23,11 @@ class GetAllProductsCubit extends Cubit<GetAllProductsState> {
   }
 
   Future<List<ProductModel>?> productSearch(String searchText) async {
-    results = /*(searchText == '')
-        ? products = await AllProductsService().getAllProducts()
-        : */
-        products!
-            .where(
-              (c) => c.title.toLowerCase().contains(searchText),
-            )
-            .toList();
+    results = products!
+        .where(
+          (c) => c.title.toLowerCase().contains(searchText),
+        )
+        .toList();
     return results;
   }
 }

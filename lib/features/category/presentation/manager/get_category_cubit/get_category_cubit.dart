@@ -1,8 +1,8 @@
-import 'package:bloc/bloc.dart';
-import 'package:meta/meta.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../models/product_model.dart';
-import '../../services/category_service.dart';
+import '../../../../home/data/models/product_model.dart';
+import '../../../data/services/category_service.dart';
 
 part 'get_category_state.dart';
 

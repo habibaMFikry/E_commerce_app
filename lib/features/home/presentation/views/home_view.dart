@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 
-import 'package:store_app/screens/app_drawer.dart';
-import 'package:store_app/widgets/home_icons.dart';
-import 'package:store_app/widgets/home_screen_body.dart';
-
-import '../cubits/cart/cart_cubit.dart';
+import 'package:store_app/core/widgets/app_drawer.dart';
+import 'package:store_app/core/widgets/home_icons.dart';
+import 'package:store_app/features/home/presentation/views/widgets/home_view_body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
