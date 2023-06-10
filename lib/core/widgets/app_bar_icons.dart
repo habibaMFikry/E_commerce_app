@@ -6,8 +6,8 @@ import '../../features/cart/presentation/manager/cart_cubit/cart_cubit.dart';
 import '../../features/cart/presentation/views/cart_screen.dart';
 import '../../features/home/presentation/views/search_view.dart';
 
-class HomeIcons extends StatelessWidget {
-  const HomeIcons({super.key});
+class AppBarIcons extends StatelessWidget {
+  const AppBarIcons({super.key});
 
   @override
   Widget build(BuildContext context) {
