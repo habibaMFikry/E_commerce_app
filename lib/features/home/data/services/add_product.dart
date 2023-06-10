@@ -10,7 +10,7 @@ class AddProduct {
       required String image,
       required String category}) async {
     Map<String, dynamic> data = await Api().post(
-        url: 'https://fakestoreapi.com/products',
+        endPoint: 'products',
         body: {
           'title': title,
           'price': price,

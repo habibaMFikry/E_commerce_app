@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
             theme: ThemeData.light(),
             routes: {
               HomeScreen.routeName: (context) => const HomeScreen(),
-              // UpdteProductPage.routeName: (context) => UpdteProductPage(),
             },
             initialRoute: HomeScreen.routeName,
           );

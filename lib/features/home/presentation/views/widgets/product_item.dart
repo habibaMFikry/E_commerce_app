@@ -51,8 +51,6 @@ class ProductItem extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(right: 1.h, left: 1.h, top: 1.h),
                     child: Text(
-                      //maxLines: 1,
-                      //overflow: TextOverflow.ellipsis,
                       product.title.substring(0, 10),
                       style: TextStyle(
                         color: Colors.grey,
